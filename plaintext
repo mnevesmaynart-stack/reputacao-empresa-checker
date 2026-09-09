@@ -1,0 +1,20 @@
+Projeto de Checagem de Reputação de sites
+
+reputacao-empresa-checker/
+├── .github/
+│   └── workflows/
+│       └── ci.yml             # Testes automáticos da API
+├── backend/
+│   ├── app/
+│   │   ├── api/               # Endpoints REST (FastAPI/Node)
+│   │   ├── collectors/        # Scrapers (Reclame Aqui, WHOIS, CNPJ)
+│   │   ├── services/          # Módulo de IA (Análise de Sentimento/LLM)
+│   │   └── main.py
+│   ├── requirements.txt
+│   └── Dockerfile
+├── extension/                 # Extensão para Chrome/Edge
+│   ├── manifest.json
+│   ├── popup.html
+│   └── content.js
+├── docker-compose.yml
+└── README.md
